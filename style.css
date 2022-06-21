@@ -1,0 +1,151 @@
+p{
+    text-align: center;
+    display: block;
+    margin:auto;
+    background-color: #000000;
+    color:#fff;
+    font-size:70px;
+    font-family: 'Kaushan Script',cursive;
+}
+
+#banner{
+    background:linear-gradient(rgba(0,0,0,0.4),#000000), url('https://s3.static.brasilescola.uol.com.br/be/2020/02/matriz.jpg');
+    background-size:cover;
+    background-position: center;
+    height:100vh;
+
+
+}
+
+#superior{
+    border-style: double;
+    border-width: 20px 10px;;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-flow: row wrap;
+    width: 23em;
+    background-color: rgba(42, 46, 48, 0.9);
+    align-items: center;
+    justify-content: center;
+}
+
+#inferior{
+    border-style: double;
+    border-width: 20px 10px;;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-flow: row wrap;
+    width: 23em;
+    background-color: rgba(42, 46, 48, 0.9);
+    align-items: center;
+    justify-content: center;
+}
+
+#matriz1 , #matriz2{
+    background-color: rgba(0, 0, 0, 0.9);
+    order:1;
+    width:9em;
+    height:40%;
+}
+
+
+#operações {
+    order:1;
+    width: 5em;
+    height: 40%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.operação{
+    width: 5em;
+    height: 10%;
+    background-color: black;
+    border-color: #fff;
+    color: white;
+}
+.operação:hover{
+    background-color: #009688;
+    cursor: pointer;
+}
+
+.parent{
+    display: flex;
+    flex-flow: row wrap;
+    width:9em;
+    background: #fafafa;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo{
+    order:1;
+    font-family: "Times New Roman", serif;
+    width: 9em;
+    height: 10%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+
+}
+
+.m1r1,.m2r1{
+    order: 2;
+    width: 3em;
+    height: 10%;
+    text-align: center;
+}
+
+.m1r2,.m2r2{
+    order: 3;
+    width: 3em;
+    height: 10%;
+    text-align: center;
+}
+
+.m1r3,.m2r3{
+    order: 3;
+    width: 3em;
+    height: 10%;
+    text-align: center;
+}
+
+.funções{
+    order: 5;
+    width: 10em;
+    height: 0%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+ 
+.função{
+    width: 120px;
+    height: 10%;
+    border-radius: 50px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    border-color: #fff;
+}
+
+.função:hover{
+    background-color: #009688;
+    cursor: pointer;
+}
+
+
+#console{
+    font-size: large;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 99%;
+    height: 30%;
+}

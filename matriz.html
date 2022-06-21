@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora de Matrizes</title>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href=" https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section id="banner">
+        <header class="container"><!--ÁREA DO CABEÇALHO-->
+            <br><br>
+            <p>Calculadora de Matrizes<hr></p>S
+            <br>
+            </div>
+    
+            <nav id="menu"> <!--Menu de opcoes--> 
+                <ul class="menu clearfix">
+                    <li class="paginas"><a href="index.html">Início</a></li>
+                    <li class="paginas"><a href="matriz.html">Calculadora Matriz</a></li>
+                    <li class="paginas"><a href="sistemas.html">Calculadora Sistemas</a></li>
+                </ul> 
+            </nav>      <!-- Fim menu opcoes-->
+        </header>        
+    
+    <div id="superior">
+        <div id="matriz1" class="parent">
+            <h1 class="titulo">Matriz A</h1>
+            <input type="number" class="m1r1" value="0"/>
+            <input type="number" class="m1r1" value="0"/>
+            <input type="number" class="m1r1" value="0"/>
+            <input type="number" class="m1r2" value="0"/>
+            <input type="number" class="m1r2" value="0"/>
+            <input type="number" class="m1r2" value="0"/>
+            <input type="number" class="m1r3" value="0"/>
+            <input type="number" class="m1r3" value="0"/>
+            <input type="number" class="m1r3" value="0"/>
+            <div class="funções">
+                <input type="button" class="função" value="Determinante (A)" onclick="mc.calDeterminantA()"/>
+                <input type="button" class="função" value="Transposição (A)" onclick="mc.transposeMatrixA()"/>
+                <input type="button" class="função" value="Ordem (A)" onclick="mc.calRankA()"/>
+                
+                
+            </div>
+        </div>
+        <div id="operações">
+            <input class="operação" type="button" value="A + B" onclick="mc.addMatrix()"/>
+            <input class="operação" type="button" value="A - B" onclick="mc.subtractMatrix()"/>
+            <input class="operação" type="button" value="A &times B" onclick="mc.multiplyMatrix()"/>
+            <input type="button" class="operação" value="Limpar" onclick="mc.clear()"/>
+        </div>
+        <div id="matriz2" class="parent">
+             <h1 class="titulo">Matriz B</h1>
+             <input type="number" class="m2r1" value="0"/>
+             <input type="number" class="m2r1" value="0"/>
+             <input type="number" class="m2r1" value="0"/>
+             <input type="number" class="m2r2" value="0"/>
+             <input type="number" class="m2r2" value="0"/>
+             <input type="number" class="m2r2" value="0"/>
+             <input type="number" class="m2r3" value="0"/>
+             <input type="number" class="m2r3" value="0"/>
+             <input type="number" class="m2r3" value="0"/>
+             <div class="funções">
+                <input type="button" class="função" value="Determinante (B)" onclick="mc.calDeterminantB()"/>
+                <input type="button" class="função" value="Transposição (B)" onclick="mc.transposeMatrixB()"/>
+                <input type="button" class="função" value="Ordem (B)" onclick="mc.calRankB()"/>
+                
+                
+            </div>
+        </div>
+    </div>
+    <br>
+    <div id="inferior">
+        
+        <textarea wrap="soft" id="console" cols="20" rows="10" disabled>Resultado: </textarea>
+    </div>
+   
+</section>
+</body>
+</html>
